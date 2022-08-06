@@ -1,0 +1,63 @@
+.employee__team-group {
+    display: flex;  
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+.employee__people-team {
+    
+    margin-right: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--primary-white-color);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        
+        margin-right: 0;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 60px)/2);
+        margin: 15px;
+
+        &:last-child {
+            margin-right: 15px;
+        }
+    }
+}
+
+.employee__team {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+.employee__prof-team {
+    margin-bottom: 16px;
+    
+    font-size: 16px;
+    line-height: 1.19;
+}

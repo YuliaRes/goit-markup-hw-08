@@ -1,0 +1,104 @@
+$hero-image-gradient : linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+.headline__slogan {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    @media screen and (max-width: 767px) {
+        font-size: 26px;
+        line-height: 1.62;
+    }
+}
+
+.headline {
+    // max-width: 1600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--footer-color);
+    background-position: center;
+
+    
+    // margin-top: 0;
+    // margin-bottom: 0;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: $hero-image-gradient, url(../images/hero-img-mobil.jpg) ;
+        background-size: cover;
+        
+        
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+            background-image: $hero-image-gradient, url(../images/hero-img-mobil2x.jpg);
+            background-size: cover;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: $hero-image-gradient, url(../images/hero-img-tablet.jpg);
+        background-size: cover;
+    
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: $hero-image-gradient, url(../images/hero-img-tablet2x.jpg);
+            background-size: cover;
+    
+        }
+    
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: $hero-image-gradient, url(../images/hero-img.jpg);
+        background-size: cover;
+    
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: $hero-image-gradient, url(../images/hero-img@2x.jpg);
+            background-size: cover;
+        }
+    }
+
+}
+
+.headline__hero-title {
+    font-family: inherit;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: transparent;
+
+    transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-color);
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 24px;
+    }
+}

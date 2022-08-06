@@ -1,0 +1,108 @@
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .join {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.join__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+.join__form {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+        display: block;   
+    }
+}
+
+.join__to-mail label {
+    display: none;
+}
+.join__to-mail input {
+    
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: var(--accent-white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:transparent;
+
+    &::placeholder {
+     font-size: 16px;
+     line-height: 1.25;
+     color: var(--accent-white-color);
+    }
+
+    @media screen and (max-width: 1199px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) and (max-width: 1199px) {
+            min-width: 450px ;
+        }  
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+}
+
+.join__to-tg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    padding: 10px 31px;
+    margin: 0 auto;
+
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-white-color);
+    
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--timing-function);
+
+    @media screen and (max-width: 119px) {
+        max-width: 200px;
+    }  
+}
+.icon__tg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+
+    &:hover ,
+    &:focus {
+     background-color: var(--button-color);
+     }
+}
+
